@@ -4,7 +4,14 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var warrior = new Warrior();
+            var wizard = new Wizard("Y'shtola");
+
+            warrior.Introduce();
+            warrior.Attack();
+
+            wizard.Introduce();
+            wizard.CastSpell();
         }
     }
 }
